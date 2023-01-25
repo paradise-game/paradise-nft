@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Paradise Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repository acts as a centralized place for people to read and review those contracts more easily.
+(Contract is identical to the published Etherscan.)
 
-Try running some of the following tasks:
+### ✨ Paradise Contract
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+This contract holds NFT data and is ERC-1155 compliant.
+
+- Source code: [ParadiseNFT.sol](contracts/PaadiseNFT.sol)
+- MainNet address: <a href="https://etherscan.io/address/_" target="_blank">\_</a>
+
+### 💸 Token Contract
+
+This contract is ERC20 for testing the ParadiseNFT contract.
+
+- Source code: [Token.sol](contracts/Token.sol)

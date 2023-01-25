@@ -4,9 +4,7 @@ pragma solidity ^0.8.17;
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-import "./ERC20Storage.sol";
-
-import "hardhat/console.sol";
+import "./extensions/ERC20Storage.sol";
 
 contract ParadiseNFT is ERC1155URIStorage, ERC20Storage, Ownable {
     uint256 public constant ONE_TOKEN = 1;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "./IERC20.sol";
+import "../token/ERC20/IERC20.sol";
 
 contract ERC20Storage {
     IERC20 internal _token;

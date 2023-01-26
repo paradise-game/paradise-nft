@@ -129,6 +129,8 @@ contract ParadiseNFT is ERC1155URIStorage, ERC20Storage, Ownable {
         uint256 amount
     ) public onlyOwner {
         _burn(account, id, amount);
+
+        _token.transfer(address(0), id * amount);
     }
 
     /**
@@ -140,6 +142,14 @@ contract ParadiseNFT is ERC1155URIStorage, ERC20Storage, Ownable {
         uint256[] memory amounts
     ) public onlyOwner {
         _burnBatch(from, ids, amounts);
+
+        uint256 totalAmount = 0;
+
+        for (uint256 i = 0; i < ids.length; i++) {
+            totalAmount += ids[i] * amounts[i];
+        }
+
+        _token.transfer(address(0), totalAmount);
     }
 
     // ------------------------------------------------------------------------

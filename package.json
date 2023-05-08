@@ -1,7 +1,6 @@
 {
-  "name": "paradise-contract",
+  "name": "@paradise/nft",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
